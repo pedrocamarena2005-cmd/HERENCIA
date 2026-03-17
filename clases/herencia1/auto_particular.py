@@ -2,15 +2,15 @@ from clases.herencia1.vehiculo import Vehiculo
 
 
 class AutoParticular(Vehiculo):
-    def __init__(self, matricula, modelo, potenciaCV, propietario):
+    def __init__(self, matricula, modelo, potenciaCV, numeroPlazas):
         super().__init__(matricula, modelo, potenciaCV)
-        self.propietario = propietario
+        self.numeroPlazas = numeroPlazas
 
     def __str__(self):
-        return super().__str__() + " " + str(self.propietario)
+        return super().__str__() + " " + str(self.numeroPlazas)
 
-    def abrirCajuela(self):
-        print("Abriendo cajuela...")
+    def pasear(self):
+        print("Paseando...")
 
-    def tocarClaxon(self):
-        print("Tocando claxon...")
+    def irAlSuper(self):
+        print("Yendo al super...")
