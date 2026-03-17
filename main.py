@@ -1,9 +1,9 @@
-from clases.herencia1.taxi import Taxi
+from clases.herencia2.perro import Perro
 
 
 def main():
-    coche = Taxi("123-GTO", "Versa", 1000, "123-a")
-    print(coche)
+    mascota = Perro("Canino", "Firulais", 300)
+    print(mascota)
 
 
 if __name__ == "__main__":
